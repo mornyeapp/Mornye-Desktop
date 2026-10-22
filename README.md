@@ -17,6 +17,12 @@
 </div>
 
 <p align="center">
+  <a href="https://github.com/mornyeapp/Mornye-Desktop/releases/latest">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mornyeapp/Mornye/main/assets/readme/badges/badge-release-dark.svg">
+      <img alt="Download the latest release" src="https://raw.githubusercontent.com/mornyeapp/Mornye/main/assets/readme/badges/badge-release-light.svg" height="56">
+    </picture>
+  </a>
   <a href="https://crowdin.com/project/mornye">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mornyeapp/Mornye/main/assets/readme/badges/badge-crowdin-dark.svg">
@@ -40,10 +46,9 @@
   </a>
 </p>
 
-## <picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/sections/section-coming-soon-dark.svg"><img src="assets/readme/sections/section-coming-soon-light.svg" height="32" align="top" alt=""></picture> Coming Soon
-
-Mornye Desktop for macOS, Windows and Linux is almost here. The first release
-will be published as soon as all testing is complete.
+<p align="center">
+  Source code available on <a href="https://github.com/mornyeapp/Mornye"><b>Mornye</b></a>
+</p>
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mornyeapp/Mornye/main/assets/readme/sections/section-screenshots-dark.svg"><img src="https://raw.githubusercontent.com/mornyeapp/Mornye/main/assets/readme/sections/section-screenshots-light.svg" height="32" align="top" alt=""></picture> Screenshots
 
@@ -263,7 +268,7 @@ Settings, history and playlists come along.
 <summary><b>Is this app safe?</b></summary>
 <br>
 
-Mornye is open source. Its code and the build workflows that will produce the
+Mornye is open source. Its code and the build workflows that produce the
 desktop releases can be inspected in
 [Mornye](https://github.com/mornyeapp/Mornye).
 
