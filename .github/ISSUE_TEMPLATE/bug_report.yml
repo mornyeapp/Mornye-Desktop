@@ -1,0 +1,137 @@
+name: Bug Report
+description: Report a reproducible bug or unexpected behavior in Mornye Desktop
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a Mornye Desktop bug. Please provide enough detail for another person to reproduce it.
+        For the phone app, open an issue in [Mornye](https://github.com/mornyeapp/Mornye/issues) instead.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues and did not find this bug.
+          required: true
+        - label: I can reproduce this on the latest desktop release.
+          required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened, and what did you expect instead?
+      placeholder: Include the visible error and any relevant context.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Open ...
+        2. Click ...
+        3. Press ...
+        4. Observe ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - App startup or updates
+        - Library, music folders or metadata
+        - Playback or media controls
+        - Lyrics
+        - Mini player
+        - Network storage (SMB, WebDAV, HTTP)
+        - Extensions
+        - Keyboard shortcuts or menus
+        - Window, layout or appearance
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: App Version
+      description: Find this in Settings > About.
+      placeholder: "e.g. v5.2.5 (beta) (build 164)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      options:
+        - macOS
+        - Windows
+        - Linux
+    validations:
+      required: true
+
+  - type: input
+    id: os-version
+    attributes:
+      label: OS Version and Hardware
+      description: On Linux, include the distribution, desktop environment and whether it runs X11 or Wayland.
+      placeholder: "e.g. macOS 26.1 on Apple silicon / Windows 11 24H2 x64 / Ubuntu 24.04, GNOME, Wayland, arm64"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: package
+    attributes:
+      label: Installed From
+      options:
+        - macOS disk image (.dmg)
+        - Windows installer (setup.exe)
+        - Windows portable zip
+        - Linux AppImage
+        - Linux deb package
+        - Built from source
+    validations:
+      required: true
+
+  - type: dropdown
+    id: style
+    attributes:
+      label: App Style
+      description: Settings > Appearance > App Style.
+      options:
+        - Mornye
+        - Material
+        - Both
+    validations:
+      required: true
+
+  - type: input
+    id: provider
+    attributes:
+      label: Extension or Provider
+      description: If relevant, include the extension/provider name and version.
+      placeholder: "Name, version, and selected priority"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs and Media
+      description: |
+        Enable detailed logging, reproduce the problem, then export logs from Settings > Logs. If the app crashes on launch, attach the crash report Mornye offers on the next start. Add screenshots or a short recording when useful. Remove credentials and personal data first.
+      placeholder: Paste logs or drag files here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      placeholder: Settings, display scaling, multiple monitors, regression version, or anything else that may help.

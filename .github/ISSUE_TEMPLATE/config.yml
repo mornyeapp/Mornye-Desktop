@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: README and FAQ
+    url: https://github.com/mornyeapp/Mornye-Desktop#readme
+    about: Installation help and answers to common questions
+  - name: Phone app issues
+    url: https://github.com/mornyeapp/Mornye/issues
+    about: Report Android and iOS problems in the Mornye repository
+  - name: Extension Development Guide
+    url: https://mornye.com/docs
+    about: Documentation for building Mornye extensions
+  - name: Telegram community
+    url: https://t.me/mornyecommunity
+    about: Ask questions and chat with other Mornye users
