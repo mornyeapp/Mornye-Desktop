@@ -53,7 +53,8 @@
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mornyeapp/Mornye/main/assets/readme/sections/section-screenshots-dark.svg"><img src="https://raw.githubusercontent.com/mornyeapp/Mornye/main/assets/readme/sections/section-screenshots-light.svg" height="32" align="top" alt=""></picture> Screenshots
 
 <picture>
-  <img src="assets/screenshots/desktop-light.png" width="100%" alt="Mornye on the desktop: an album page and Now Playing with synced lyrics">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/screenshots/desktop-dark.png">
+  <img src="assets/screenshots/desktop-light.png" width="100%" alt="Mornye on the desktop: the Library and Now Playing with synced lyrics">
 </picture>
 
 ---
